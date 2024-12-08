@@ -275,9 +275,11 @@ const CarDetail = () => {
                       </div>
                       <div className="text-secondary-300 line-through">$100.00</div>
                     </div>
-                    <button className="bg-primary-500 text-white px-8 py-3 rounded-[4px] font-semibold hover:bg-primary-600 transition-colors">
-                      Rent Now
-                    </button>
+                    <Link href="/rent">
+                      <button className="bg-primary-500 text-white px-8 py-3 rounded-[4px] font-semibold hover:bg-primary-600 transition-colors">
+                        Rent Now
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -445,9 +447,11 @@ const CarDetail = () => {
                           </p>
                         )}
                       </div>
-                      <button className="bg-primary-500 text-white px-4 py-2 rounded-[10px] text-[14px] font-semibold hover:bg-primary-600 transition-colors">
-                        Rent Now
-                      </button>
+                      <Link href="/rent">
+                        <button className="bg-primary-500 text-white px-4 py-2 rounded-[10px] text-[14px] font-semibold hover:bg-primary-600 transition-colors">
+                          Rent Now
+                        </button>
+                      </Link>
                     </div>
                   </div>
                 ))}
@@ -552,9 +556,11 @@ const CarDetail = () => {
                           </p>
                         )}
                       </div>
-                      <button className="bg-primary-500 text-white px-4 py-2 rounded-[10px] text-[14px] font-semibold hover:bg-primary-600 transition-colors">
-                        Rent Now
-                      </button>
+                      <Link href="/rent">
+                        <button className="bg-primary-500 text-white px-4 py-2 rounded-[10px] text-[14px] font-semibold hover:bg-primary-600 transition-colors">
+                          Rent Now
+                        </button>
+                      </Link>
                     </div>
                   </div>
                 ))}

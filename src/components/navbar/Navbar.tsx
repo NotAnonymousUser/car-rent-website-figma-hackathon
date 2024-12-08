@@ -36,6 +36,18 @@ export function Navbar() {
 
       {/* Action Buttons */}
       <div className="flex items-center gap-[20px]">
+        {/* Dashboard Button */}
+        <Link
+          href="/dashboard"
+          className="w-[44px] h-[44px] flex items-center justify-center rounded-full hover:bg-secondary-100 transition-colors"
+        >
+          <Image
+            src="/images/dashboard-icon.svg"
+            alt="Dashboard"
+            width={24}
+            height={24}
+          />
+        </Link>
         {/* Like Button */}
         <button className="w-[44px] h-[44px] flex items-center justify-center rounded-full hover:bg-secondary-100 transition-colors">
           <Image

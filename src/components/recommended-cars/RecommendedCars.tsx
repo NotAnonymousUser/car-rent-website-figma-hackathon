@@ -223,9 +223,11 @@ export function RecommendedCars() {
                   </span>
                 )}
               </div>
-              <button className="bg-primary-500 text-white px-4 py-2 rounded-[4px] text-[14px] font-semibold font-jakarta hover:bg-primary-600">
-                Rent Now
-              </button>
+              <Link href="/rent">
+                <button className="bg-primary-500 text-white px-4 py-2 rounded-[10px] text-[14px] font-semibold hover:bg-primary-600 transition-colors">
+                  Rent Now
+                </button>
+              </Link>
             </div>
           </div>
         ))}
