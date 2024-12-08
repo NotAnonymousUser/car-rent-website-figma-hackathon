@@ -6,7 +6,7 @@ export const RecentTransactions = () => {
       type: 'Sport Car',
       date: '20 July',
       amount: 80.00,
-      image: '/images/cars/nissan-gtr.png'
+      image: '/images/hero-car-2.png'
     },
     {
       id: 2,
@@ -14,7 +14,7 @@ export const RecentTransactions = () => {
       type: 'Sport Car',
       date: '19 July',
       amount: 99.00,
-      image: '/images/cars/koenigsegg.png'
+      image: '/images/hero-car-1.png'
     },
     {
       id: 3,
@@ -22,7 +22,7 @@ export const RecentTransactions = () => {
       type: 'Sport Car',
       date: '18 July',
       amount: 96.00,
-      image: '/images/cars/rolls-royce.png'
+      image: '/images/rolls-royce.png'
     },
     {
       id: 4,
@@ -30,7 +30,7 @@ export const RecentTransactions = () => {
       type: 'SUV',
       date: '17 July',
       amount: 80.00,
-      image: '/images/cars/cr-v.png'
+      image: '/images/cr-v.png'
     },
   ];
 

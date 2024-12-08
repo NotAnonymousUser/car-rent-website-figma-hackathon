@@ -1,9 +1,20 @@
+import Image from "next/image";
+
 export const RentalDetails = () => {
   return (
     <div className="bg-white rounded-[10px] p-6">
       {/* Map Section */}
       <div className="h-[240px] bg-[#F6F7F9] rounded-[10px] mb-6 overflow-hidden">
-        {/* Add your map implementation here */}
+        {/* Map Section */}
+        <div className="mb-4 bg-white rounded-lg p-4">
+              <Image
+                src="/images/maps.png"
+                alt="Map"
+                width={600}
+                height={300}
+                className="rounded-lg w-full h-full"
+              />
+            </div>
         <div className="w-full h-full rounded-[10px] bg-[#F6F7F9]"></div>
       </div>
 
