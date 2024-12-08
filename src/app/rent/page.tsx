@@ -142,8 +142,7 @@ export default function RentPage() {
                   </div>
                   <span className="text-[14px] text-secondary-500">Credit Card</span>
                   <div className="flex gap-2 ml-auto">
-                    <Image src="/images/visa.png" alt="Visa" width={24} height={24} />
-                    <Image src="/images/mastercard.png" alt="Mastercard" width={24} height={24} />
+                    <Image src="/images/visa.png" alt="Visa" width={100} height={24} />
                   </div>
                 </div>
                 <div className="grid grid-cols-2 gap-4">
@@ -187,7 +186,7 @@ export default function RentPage() {
                 <div className="flex items-center gap-2">
                   <div className="w-4 h-4 rounded-full border-2 border-secondary-300 flex items-center justify-center"></div>
                   <span className="text-[14px] text-secondary-500">PayPal</span>
-                  <Image src="/images/paypal.png" alt="PayPal" width={77} height={20} className="ml-auto" />
+                  <Image src="/images/paypal.png" alt="PayPal" width={100} height={20} className="ml-auto" />
                 </div>
               </div>
 
@@ -196,7 +195,7 @@ export default function RentPage() {
                 <div className="flex items-center gap-2">
                   <div className="w-4 h-4 rounded-full border-2 border-secondary-300 flex items-center justify-center"></div>
                   <span className="text-[14px] text-secondary-500">Bitcoin</span>
-                  <Image src="/images/bitcoin.png" alt="Bitcoin" width={77} height={20} className="ml-auto" />
+                  <Image src="/images/bitcoin.png" alt="Bitcoin" width={100} height={20} className="ml-auto" />
                 </div>
               </div>
             </div>
@@ -250,21 +249,16 @@ export default function RentPage() {
                 <h3 className="text-[20px] font-semibold text-secondary-500 font-jakarta">Nissan GT-R</h3>
                 <div className="flex items-center gap-1">
                   <div className="flex">
-                    {[1, 2, 3, 4].map((star) => (
+                   
                       <Image
-                        key={star}
-                        src="/images/star-filled.png"
+                        
+                        src="/images/stars.png"
                         alt="Star"
-                        width={12}
-                        height={12}
+                        width={80}
+                        height={10}
                       />
-                    ))}
-                    <Image
-                      src="/images/star-outline.png"
-                      alt="Star"
-                      width={12}
-                      height={12}
-                    />
+                  
+                   
                   </div>
                   <span className="text-[12px] text-secondary-300">440+ Reviewer</span>
                 </div>

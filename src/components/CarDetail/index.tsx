@@ -314,7 +314,7 @@ const CarDetail = () => {
                     <div className="flex justify-between items-start mb-4">
                       <div className="flex items-center gap-4">
                         <Image
-                          src={`/images/avatar-${index + 1}.png`}
+                          src={`/images/profile-icon.png`}
                           alt={review.name}
                           width={56}
                           height={56}
@@ -330,15 +330,15 @@ const CarDetail = () => {
                         </div>
                       </div>
                       <div className="flex">
-                        {Array.from({ length: review.rating }).map((_, i) => (
+                        
                           <Image
-                            key={i}
-                            src="/images/star-filled.png"
+                            
+                            src="/images/stars.png"
                             alt="Star"
-                            width={16}
-                            height={16}
+                            width={100}
+                            height={100}
                           />
-                        ))}
+                       
                       </div>
                     </div>
                     <p className="text-[16px] text-secondary-300 font-jakarta">
