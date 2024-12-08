@@ -22,7 +22,7 @@ export const RentalDetails = () => {
       <div className="flex gap-4 mb-8">
         <div className="w-[130px] h-[80px] bg-[#F6F7F9] rounded-[8px] flex items-center justify-center">
           <img 
-            src="/images/cars/nissan-gtr.png" 
+            src="/images/nissan-gtr.png" 
             alt="Nissan GT-R" 
             className="w-[110px] h-[60px] object-contain"
           />

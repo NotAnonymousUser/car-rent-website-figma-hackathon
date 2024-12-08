@@ -2,23 +2,24 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 
 export const Sidebar = () => {
   const pathname = usePathname();
 
   const menuItems = [
-    { name: 'Dashboard', path: '/dashboard', icon: '🏠' },
-    { name: 'Car Rent', path: '/rent', icon: '🚗' },
-    { name: 'Insight', path: '/insight', icon: '📊' },
-    { name: 'Reimburse', path: '/reimburse', icon: '💰' },
-    { name: 'Inbox', path: '/inbox', icon: '📥' },
-    { name: 'Calendar', path: '/calendar', icon: '📅' },
+    { name: 'Dashboard', path: '/dashboard', icon: '/images/icon-dashboard.png' },
+    { name: 'Car Rent', path: '/rent', icon: '/images/icon-car.png' },
+    { name: 'Insight', path: '/insight', icon: '/images/icon-insight.png' },
+    { name: 'Reimburse', path: '/reimburse', icon: '/images/icon-reimburse.png' },
+    { name: 'Inbox', path: '/inbox', icon: '/images/icon-inbox.png' },
+    { name: 'Calendar', path: '/calendar', icon: '/images/icon-calendar.png' },
   ];
 
   const preferencesItems = [
-    { name: 'Settings', path: '/settings', icon: '⚙️' },
-    { name: 'Help & Center', path: '/help', icon: '❓' },
-    { name: 'Dark Mode', path: '#', icon: '🌙' },
+    { name: 'Settings', path: '/settings', icon: '/images/icon-settings.png' },
+    { name: 'Help & Center', path: '/help', icon: '/images/icon-help.png' },
+    { name: 'Dark Mode', path: '#', icon: '/images/icon-dark-mode.png' },
   ];
 
   return (
@@ -40,7 +41,7 @@ export const Sidebar = () => {
                     : 'text-[#596780] hover:bg-[#F6F7F9]'
                 ].join(' ')}
               >
-                <span>{item.icon}</span>
+                <Image src={item.icon} alt={item.name} width={24} height={24} />
                 <span className="font-medium">{item.name}</span>
               </Link>
             ))}
@@ -61,7 +62,7 @@ export const Sidebar = () => {
                     : 'text-[#596780] hover:bg-[#F6F7F9]'
                 ].join(' ')}
               >
-                <span>{item.icon}</span>
+                <Image src={item.icon} alt={item.name} width={24} height={24} />
                 <span className="font-medium">{item.name}</span>
               </Link>
             ))}
@@ -73,7 +74,7 @@ export const Sidebar = () => {
             onClick={() => {/* Add logout functionality */}}
             className="flex items-center gap-3 p-2 rounded-lg text-[#596780] hover:bg-[#F6F7F9] w-full transition-colors"
           >
-            <span>🚪</span>
+            <Image src="/images/logout.png" alt="Logout" width={24} height={24} />
             <span className="font-medium">Log Out</span>
           </button>
         </div>
